@@ -1,22 +1,21 @@
 {
-  "name": "my-project",
+  "name": "git",
   "version": "1.0.0",
-  "description": "A sample Node.js project",
-  "main": "index.js",
+  "description": "",
+  "homepage": "https://github.com/saipraneeth636/git#readme",
+  "bugs": {
+    "url": "https://github.com/saipraneeth636/git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saipraneeth636/git.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest"
-  },
-  "keywords": [
-    "nodejs",
-    "sample"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   }
 }
