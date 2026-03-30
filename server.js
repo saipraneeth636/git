@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+    let urlPath = req.url === '/' ? 'index.html' : req.url.substring(1);
+    let filePath = path.join(__dirname, 'public', urlPath);
     
     fs.readFile(filePath, (err, data) => {
         if (err) {
